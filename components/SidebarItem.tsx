@@ -10,7 +10,7 @@ interface SidebarItemProps {
 
 }
 
-
+// Configuracion de Objetos dentro de SideBar
 
 const SidebarItem: React.FC<SidebarItemProps>= ({
     icon: Icon,

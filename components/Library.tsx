@@ -1,3 +1,5 @@
+// Configuracion de Biblioteca
+
 "use client";
 
 import { AiOutlinePlus } from "react-icons/ai";
@@ -5,7 +7,7 @@ import { TbPlaylist } from "react-icons/tb";
 
 const Library = () => {
     const onClick = ( ) => {
-        // handle upload later
+        // handle upload later / manejar subida de musica
     };
 
     return (
@@ -26,7 +28,7 @@ const Library = () => {
                     font-medium 
                     text-md
                     ">
-                        Tu Librería
+                        Tu Biblioteca
                     </p>
                 </div>
                 <AiOutlinePlus 

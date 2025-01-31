@@ -12,6 +12,7 @@ interface SidebarProps {
     children: React.ReactNode;
 }
 
+// configuracion de SiderBar
 const Sidebar: React.FC<SidebarProps> = ({
     children
 }) => {
@@ -21,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     const routes = useMemo(() => [
         {
             icon: HiHome,
-            label: 'Home',
+            label: 'Inicio',
             active: pathname !== '/search',
             href: '/',
         },
@@ -47,6 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             p-2
             "
         >
+            {/* Apartado de Inicio y Busqueda*/}
             <Box>
                 <div
                 className="
@@ -65,6 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 ))}
                 </div>
             </Box>
+            {/* Apartado de Biblioteca*/}
             <Box className="overflow-y-auto h-full">
                 <Library/>
             </Box>

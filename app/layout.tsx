@@ -5,11 +5,13 @@ import Sidebar from "@/components/Sidebar";
 
 const font = Figtree({ subsets: ["latin"] });
 
+// metadata 
 export const metadata: Metadata = {
   title: "RhythmPulse",
   description: "Listen To Music",
 };
 
+// configuracion global 
 export default function RootLayout({
   children,
 }: Readonly<{

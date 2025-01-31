@@ -1,3 +1,5 @@
+// componete Caja
+
 import { twMerge } from "tailwind-merge";
 
 interface  BoxProps {
