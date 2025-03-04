@@ -1,11 +1,17 @@
 // Vista Principal/Inicio 
 
+import getSongs from "@/actions/getSongs";
 import Header from "@/components/Header";
 import ListItem from "@/components/ListItem";
 
+import PageContent from "./components/PageContent";
+
+export const revalidate = 0;
 
 // Apartado para visualizar nuevas canciones y artistas
-export default function Home() {
+export default async function Home() {
+  const songs = await getSongs();
+
   return (
     <div className="bg-neutral-900 rounded-lg h-full w-full overflow-hidden overflow-y-auto">
       {/*Encabezado de la Pagina*/}
@@ -32,9 +38,7 @@ export default function Home() {
             Nuevas Canciones
           </h1>
         </div>
-        <div>
-          Lista de Canciones
-        </div>
+        <PageContent songs={songs}/>
       </div>
     </div>
   );
