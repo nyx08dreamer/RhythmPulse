@@ -37,7 +37,7 @@ const LikedContent: React.FC<LikedContentProps> = ({
             px-6
             text-neutral-400
             ">
-                No Liked Songs.
+                No hay Canciones Favoritas.
             </div>
         )
     }
@@ -46,7 +46,7 @@ const LikedContent: React.FC<LikedContentProps> = ({
         <div className="flex flex-col gap-y-2 w-full p-6">
             {songs.map((song) => (
                 <div
-                key={songs.id}
+                key={song.id}
                 className="flex items-center gap-x-4 w-full"
                 >
                     <div className="flex-1">
@@ -58,7 +58,6 @@ const LikedContent: React.FC<LikedContentProps> = ({
                 <LikeButton songId={song.id}/>
                 </div>
             ))}
-            LikedContent
         </div>
     );
 }

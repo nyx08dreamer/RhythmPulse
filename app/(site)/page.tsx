@@ -25,7 +25,7 @@ export default async function Home() {
           ">
             {/* Apartado para ver las canciones a las que se da Me Gusta*/}
             <ListItem image="/images/liked.png"
-            name="Liked Songs"
+            name="Canciones Favoritas"
             href="liked"
             />
           </div>
